@@ -9,3 +9,5 @@ extern int mouse_x; //Х координата мыши
 
 extern float WinWid;
 extern float WinHei;
+
+
