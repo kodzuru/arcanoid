@@ -29,9 +29,9 @@ void Draw() {
 	}glEnd();
 
 	// рисуем блоки
-	glColor3f(0.1, 0.2, 0.8);
 	glBegin(GL_QUADS); {
 		for (int i(0); i < 10; i++) {
+			glColor3ub(i*25, i*10, 160);
 			for (int j(0); j < 15; j++) {
 				Brick &b = brick[i][j];
 				if (b.active) {
@@ -113,8 +113,7 @@ o:	Draw(); // goto(line 100)
 void MouseMove(int ax, int ay) //движение мыши без нажатия кнопок
 {
 	//координаты ракетки
-	mouse_x = ax;
-	r_x = mouse_x - r_w / 2;
+	r_x = ax - r_w / 2;
 	//координаты мяча
 	if (!ball.active) //если мяч на ракетке(не активен)
 	{

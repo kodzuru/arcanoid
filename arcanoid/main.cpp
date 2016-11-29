@@ -19,7 +19,6 @@ Brick brick[10][15];
 
 
 float r_x = 50.0, r_y = 290.0, r_w = 80, r_h = 8.0; //координаты и резмеры ракетки
-int mouse_x; //Х координата мыши
 float WinWid = 300.0;
 float WinHei = 300.0;
 
